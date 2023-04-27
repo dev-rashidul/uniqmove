@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ICICI Bank's Products info on your Desk</title>
+
+    <link type="text/css" href="css/styles.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="js/waltzerjs.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-size: 22px;
+        color: #2d2d2d;
+        font-family: arial;
+        background: url("images/desk.jpg");
+        background-size: 100%;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      h2 {
+        padding: 10px;
+        font-size: 40px;
+        border-radius: 20px;
+        color: #000000;
+      }
+
+      #myInput {
+        background-image: url("images/search.png");
+        background-position: 20px 23px;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 22px 20px 22px 60px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+        color: #373737;
+        font-size: 20px;
+        border-radius: 20px;
+        width: 70%;
+        box-shadow: 0px 0px 10px #000000;
+      }
+
+      #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #myUL li {
+        display: block;
+      }
+
+      #myUL li a {
+        margin-top: -1px; /* Prevent double borders */
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block;
+      }
+      .mainhead {
+        font-size: 36px;
+        font-weight: bold;
+        padding: 15px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        display: none;
+      }
+
+      myUL ul li img {
+        width: 100%;
+        border-radius: 40px;
+        box-shadow: 10px 10px 8px #888888;
+      }
+
+      .mainimg {
+        width: 85%;
+      }
+      .mainimg img {
+        width: 80%;
+        border-radius: 40px;
+        box-shadow: 0px 0px 20px #000000;
+      }
+      .toc img {
+        width: 100%;
+      }
+      .leftalign {
+        float: left;
+        margin-left: ;
+      }
+
+      input {
+      }
+
+      .hiddentags {
+        display: none;
+      }
+
+      .clipp {
+        position: absolute;
+        margin-top: -28px;
+        margin-left: 93px;
+      }
+      .clipp img {
+        z-index: 22;
+        width: 130px;
+        box-shadow: 0px 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Sidebar Start -->
+
+    <section id="Sidebar">
+      <div class="sidebar-nav" id="sidebar-nav">
+        <div class="nav">
+          <div class="close">
+            <img src="images/cross.png" alt="" />
+          </div>
+          <ul class="side-nav">
+            <li>
+              <a class="main-nav" href="#">Digital Experience</a
+              ><a class="menu-toggle plus" href="#"></a>
+              <ul class="sub-menu pt-20">
+                <li class="pb-15">
+                  <a href="#">Start Relationship Instantly (Accounts) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Prime Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">3-1 Account</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Salary Accounts</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Payment Solutions) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Money Transfer) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Channels to Bank) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="main-nav" href="#">SES Stack</a
+              ><a class="menu-toggle plus" href="#"></a>
+              <ul class="sub-menu pt-20">
+                <li class="pb-15">
+                  <a href="#">Start Relationship Instantly (Accounts) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Prime Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">3-1 Account</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Salary Accounts</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Payment Solutions) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Money Transfer) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Channels to Bank) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="main-nav" href="#">Personal NRI Stack</a
+              ><a class="menu-toggle plus" href="#"></a>
+              <ul class="sub-menu pt-20">
+                <li class="pb-15">
+                  <a href="#">Start Relationship Instantly (Accounts) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Prime Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">3-1 Account</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Salary Accounts</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Payment Solutions) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Money Transfer) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pb-15">
+                  <a href="#">Transact Digitally (Channels to Bank) </a
+                  ><a href="#" class="menu-toggle"></a>
+                  <ul class="sub-menu sub-menu-level2">
+                    <li>
+                      <a href="#">Forex Prepaid Card</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Prime Pro Program</a
+                      ><a href="#" class="menu-toggle"></a>
+                      <ul class="sub-menu">
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 1</a>
+                        </li>
+                        <li>
+                          <a class="link" href="#item4">Sub-sub link 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sidebar End -->
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td align="center">
+            <h2>ICICI Bank's Products info on your Desk</h2>
+            <div id="navbar">
+              <div class="bar" id="bar">
+                <img src="images/bar.png" alt="bar" />
+                <span>Menu</span>
+              </div>
+              <input
+                type="text"
+                id="myInput"
+                placeholder="Search for ICICI Bank's Products (e.g. Prime Pro, Forex, 3-in-1 Account or a page no.)"
+                title="Type in a name"
+              />
+            </div>
+
+            <br />
+
+            <div class="mainimg toc" id="introimg">
+              <br />
+
+              <h3>Table of contents</h3>
+              <div id="carousel" class="outerWrapper"></div>
+            </div>
+
+            <div class="mainimg">
+              <ul id="myUL">
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 1</div>
+                    <img src="Catalogue/01.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 2</div>
+                    <img src="Catalogue/02.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 3</div>
+                    <img src="Catalogue/03.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a id="item4" href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 4</div>
+                    <img src="Catalogue/04.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 5</div>
+                    <img src="Catalogue/05.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 6</div>
+                    <img src="Catalogue/06.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 7</div>
+                    <img src="Catalogue/07.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 8</div>
+                    <img src="Catalogue/08.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">Index 9</div>
+                    <img src="Catalogue/09.jpg"
+                  /></a>
+                </li>
+
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">1 Prime Program a/c</div>
+                    <img src="Catalogue/10.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">2 Prime Pro a/c</div>
+                    <img src="Catalogue/11.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">3 3 in 1</div>
+                    <img src="Catalogue/12.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">4 SA</div>
+                    <img src="Catalogue/13.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">5 Forex Card</div>
+                    <img src="Catalogue/14.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">6 Foreign Currency</div>
+                    <img src="Catalogue/15.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">7 Fasttag</div>
+                    <img src="Catalogue/16.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">8 Card</div>
+                    <img src="Catalogue/17.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      9 ICICI Bank Brand Vouchers* Program
+                    </div>
+                    <img src="Catalogue/18.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">10 Multi Wallet Cards</div>
+                    <img src="Catalogue/19.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">11 Semi-closed Cards</div>
+                    <img src="Catalogue/20.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">12 NEFT – RTGS- IMPS</div>
+                    <img src="Catalogue/21.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">13 Utility bills</div>
+                    <img src="Catalogue/22.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">14 iMobile</div>
+                    <img src="Catalogue/23.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">15 internet banking</div>
+                    <img src="Catalogue/24.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">16 Whatsapp</div>
+                    <img src="Catalogue/25.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">17 HL / Mortgage home</div>
+                    <img src="Catalogue/26.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">18 HO / HL draft home</div>
+                    <img src="Catalogue/27.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">19 Instant approved HL</div>
+                    <img src="Catalogue/28.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">20 Instant balance transfer</div>
+                    <img src="Catalogue/29.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">21 LAP</div>
+                    <img src="Catalogue/30.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">22 Auto Loan / AL Car Loan</div>
+                    <img src="Catalogue/31.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      23 Two Wheeler loan / 2 Wheeler Loan
+                    </div>
+                    <img src="Catalogue/32.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">24 PL</div>
+                    <img src="Catalogue/33.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">25 JL / Jwell Loan Gold</div>
+                    <img src="Catalogue/34.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">26 Education Loan ED</div>
+                    <img src="Catalogue/35.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">27 FD OD</div>
+                    <img src="Catalogue/36.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">28 OD on Salary Account</div>
+                    <img src="Catalogue/37.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">29 GD OD / JL OD Gold Jw</div>
+                    <img src="Catalogue/38.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">30 Tractor Loan</div>
+                    <img src="Catalogue/39.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">31 RBC</div>
+                    <img src="Catalogue/40.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">32 KCC</div>
+                    <img src="Catalogue/41.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">33 CBF</div>
+                    <img src="Catalogue/42.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">34 SHG</div>
+                    <img src="Catalogue/43.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">35 KKV</div>
+                    <img src="Catalogue/44.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">36 Emerald CC</div>
+                    <img src="Catalogue/45.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">37 Sapphiro CC</div>
+                    <img src="Catalogue/46.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">38 Rubyx CC</div>
+                    <img src="Catalogue/47.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">39 Coral CC</div>
+                    <img src="Catalogue/48.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">40 Platinum Chip CC</div>
+                    <img src="Catalogue/49.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">41 Accelero CC</div>
+                    <img src="Catalogue/50.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">42 Mine CC</div>
+                    <img src="Catalogue/51.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">43 Unifare Metro CC</div>
+                    <img src="Catalogue/52.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">44 Amazon Pay CC</div>
+                    <img src="Catalogue/53.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      45 MakeMyTrip ICICI Bank Signature CC
+                    </div>
+                    <img src="Catalogue/54.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      46 MakeMyTrip ICICI Bank Platinum CC
+                    </div>
+                    <img src="Catalogue/55.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      47 Manchester United Signature CC
+                    </div>
+                    <img src="Catalogue/56.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">48 Manchester United Platinum CC</div>
+                    <img src="Catalogue/57.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">49 HPCL CC</div>
+                    <img src="Catalogue/58.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">50 Health Insurance</div>
+                    <img src="Catalogue/59.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">51 LI</div>
+                    <img src="Catalogue/60.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">52 Cancer Cover</div>
+                    <img src="Catalogue/61.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">53 Auto Insurance</div>
+                    <img src="Catalogue/62.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      54 Two Wheeler loan / 2 Wheeler Loan insurance
+                    </div>
+                    <img src="Catalogue/63.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">55 Travel Insurance</div>
+                    <img src="Catalogue/64.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">56 HL Insurance home</div>
+                    <img src="Catalogue/65.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">57 FD</div>
+                    <img src="Catalogue/66.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">58 Recurring depo</div>
+                    <img src="Catalogue/67.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">59 iWish Flexible Deposits</div>
+                    <img src="Catalogue/68.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">60 MF</div>
+                    <img src="Catalogue/69.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">61 Insta SIP</div>
+                    <img src="Catalogue/70.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">62 Demat Account</div>
+                    <img src="Catalogue/71.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">63 PPF</div>
+                    <img src="Catalogue/72.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">64 NPS</div>
+                    <img src="Catalogue/73.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">65 SSY</div>
+                    <img src="Catalogue/74.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">66 SCSS</div>
+                    <img src="Catalogue/75.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">67 SGB</div>
+                    <img src="Catalogue/76.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">68 InstaBIZ</div>
+                    <img src="Catalogue/77.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">69 Super Merchant CA</div>
+                    <img src="Catalogue/78.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">70 iStartup</div>
+                    <img src="Catalogue/79.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">71 SBA 2.0 </div>
+                    <img src="Catalogue/80.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">72 Eazypay POS</div>
+                    <img src="Catalogue/81.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">73 Trade Online</div>
+                    <img src="Catalogue/82.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">74 BizPay360</div>
+                    <img src="Catalogue/83.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">75 Bank Plugin</div>
+                    <img src="Catalogue/84.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">76 Bank Guarantee</div>
+                    <img src="Catalogue/85.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">77 GST Business Loans</div>
+                    <img src="Catalogue/86.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">78 Insta BLG</div>
+                    <img src="Catalogue/87.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      79 OD against Fixed Deposit (For Individuals &
+                      Proprietorship firms)
+                    </div>
+                    <img src="Catalogue/88.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      80 OD against Fixed Deposit (For Corporates)
+                    </div>
+                    <img src="Catalogue/89.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">81 Enterprise Loan</div>
+                    <img src="Catalogue/90.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">82 Vyapaar Loan</div>
+                    <img src="Catalogue/91.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">83 Super Biz Flexi Credit</div>
+                    <img src="Catalogue/92.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">84 Balance Transfer BT</div>
+                    <img src="Catalogue/93.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">85 Enterprise Credit</div>
+                    <img src="Catalogue/94.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">86 Retail Credit Lending program</div>
+                    <img src="Catalogue/95.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">87 Mortgage Overdraft</div>
+                    <img src="Catalogue/96.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">88 Agri Credit Line</div>
+                    <img src="Catalogue/97.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">89 Insta OD</div>
+                    <img src="Catalogue/98.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">90 Merchant OD</div>
+                    <img src="Catalogue/99.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      91 CGTMSE (Credit Guarantee Trust for Micro and Small
+                      Enterprises)
+                    </div>
+                    <img src="Catalogue/100.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">
+                      92 MUDRA (Micro Units Development and refinance agency
+                      Limited)
+                    </div>
+                    <img src="Catalogue/101.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">93 Stand Up India Scheme</div>
+                    <img src="Catalogue/102.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">94 CMS Partner Programme</div>
+                    <img src="Catalogue/103.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">95 NRI Regular AC</div>
+                    <img src="Catalogue/104.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">96 NRI Pro AC</div>
+                    <img src="Catalogue/105.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">97 NRI Premia AC</div>
+                    <img src="Catalogue/106.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">98 Special AC</div>
+                    <img src="Catalogue/107.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">99 Money 2 World</div>
+                    <img src="Catalogue/108.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">100 Money 2 India</div>
+                    <img src="Catalogue/109.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">101 Wire Transfer</div>
+                    <img src="Catalogue/110.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">102 NRI HL</div>
+                    <img src="Catalogue/111.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">103 NRI 3 in 1 account</div>
+                    <img src="Catalogue/112.jpg"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><div class="clipp"><img src="images/clip.png" /></div>
+                    <div class="mainhead">104 FD / RD</div>
+                    <img src="Catalogue/113.jpg"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      var input = document.getElementById("myInput");
+      input.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          myFunction();
+        }
+      });
+
+      function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          document.getElementById("introimg").style.display = "none";
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+            document.getElementById("introimg").style.display = "block";
+          } else {
+            li[i].style.display = "none";
+          }
+
+          if ((txtValue = 1)) {
+            document.getElementById("introimg").style.display = "none";
+          }
+        }
+      }
+    </script>
+
+    <script>
+      $("#carousel").waltzer({ scroll: 1 });
+
+      window.onscroll = function () {
+        myFunction1();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction1() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
