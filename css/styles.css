@@ -266,7 +266,7 @@ New CSS
 
 .sticky .bar {
   position: absolute;
-  top: 25px;
+  top: 28px;
   left: 50px;
   background: transparent;
 }
@@ -401,69 +401,62 @@ New CSS
 
 @media (min-width: 300px) and (max-width: 767px) {
   .bar {
-    top: 20px;
-    left: 20px;
+    top: 20px !important;
+    left: 20px !important;
   }
 
   .sticky .bar {
-    left: 0px;
+    left: 0px !important;
   }
 
   .sticky .bar span {
-    display: none;
+    display: none !important;
   }
 
   .sidebar-nav {
-    padding: 20px 10px 0;
+    padding: 20px 10px 0 !important;
   }
 
   .main-nav {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   .sub-menu li a {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .sidebar-nav ul li a.menu-toggle.plus {
-    top: 8px;
+    top: 8px !important;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 
   #myInput {
-    font-size: 16px;
-    width: 75%;
+    font-size: 16px !important;
+    width: 75% !important;
     margin-right: -40px;
     background-size: 20px;
   }
 
   .mainimg,
   .mainimg img {
-    width: 100%;
+    width: 100% !important;
+    border-radius: 20px !important;
   }
 
   .clipp {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 
   .clipp img {
-    width: 80px;
+    width: 80px !important;
   }
 
   .left-nav-btn,
   .right-nav-btn {
-    top: 160px;
-  }
-
-  .left-nav-btn {
-    left: -20px;
-  }
-
-  .right-nav-btn {
-    right: -8px;
+    display: none !important;
   }
 }
 
