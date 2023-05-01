@@ -282,13 +282,13 @@ New CSS
   height: 100vh;
   background-color: #db603a;
   padding: 50px 30px 0;
-  box-shadow: 6px 0px 20px 13px #00000059;
   transition: left 0.3s ease-in-out;
   z-index: 9999;
 }
 
 .sidebar-nav.active {
   left: 0;
+  box-shadow: 6px 0px 20px 13px #00000059;
 }
 
 .close img {
@@ -436,9 +436,13 @@ New CSS
 
   #myInput {
     font-size: 16px !important;
+    width: 100% !important;
+    background-size: 20px;
+  }
+
+  .sticky #myInput {
     width: 75% !important;
     margin-right: -40px;
-    background-size: 20px;
   }
 
   .mainimg,
