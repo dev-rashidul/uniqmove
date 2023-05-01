@@ -407,6 +407,7 @@ New CSS
 
   .sticky .bar {
     left: 0px !important;
+    top: 25px !important;
   }
 
   .sticky .bar span {
