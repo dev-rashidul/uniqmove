@@ -399,7 +399,7 @@ New CSS
   opacity: 0.8;
 }
 
-@media (min-width: 300px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 1024px) {
   .bar {
     top: 20px !important;
     left: 20px !important;
@@ -407,7 +407,7 @@ New CSS
 
   .sticky .bar {
     left: 0px !important;
-    top: 25px !important;
+    top: 33px !important;
   }
 
   .sticky .bar span {
@@ -434,13 +434,13 @@ New CSS
     font-size: 28px !important;
   }
 
-  #myInput {
+  .search-box {
     font-size: 16px !important;
     width: 100% !important;
     background-size: 20px;
   }
 
-  .sticky #myInput {
+  .sticky .search-box {
     width: 75% !important;
     margin-right: -40px;
   }
@@ -462,6 +462,13 @@ New CSS
   .left-nav-btn,
   .right-nav-btn {
     display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sticky .bar {
+    left: 40px !important;
+    top: 33px !important;
   }
 }
 
